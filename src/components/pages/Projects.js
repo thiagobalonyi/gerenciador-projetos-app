@@ -1,6 +1,10 @@
+import styles from './Projects.module.css'
+
 import { useLocation } from 'react-router-dom'
 
-import Message from "../layouts/Message"
+import Message from '../layouts/Message'
+import Container from '../layouts/Container'
+import LinkButton from '../layouts/LinkButton'
 
 function Projects() {
 
@@ -11,9 +15,15 @@ function Projects() {
     }
 
     return (
-        <div>
+        <div className={styles.project_container}>
+            <div className={styles.title_container}>
             <h1>Meus projetos</h1>
+            <LinkButton to="/newproject" text="Criar Projeto" />
+            </div>
             {message && <Message type='success' msg={message} />}
+            <Container customeClass='start'>
+                <p>Projetos...</p>
+            </Container>
         </div>
     )
 }
