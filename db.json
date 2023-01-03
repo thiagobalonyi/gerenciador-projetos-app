@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Teste 3 atualizado",
-      "budget": "7000",
+      "budget": "70000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -10,6 +10,17 @@
       "cost": 0,
       "service": [],
       "id": 3
+    },
+    {
+      "name": "Projeto 5",
+      "budget": "30000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "service": [],
+      "id": 4
     }
   ],
   "categories": [
